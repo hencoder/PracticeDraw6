@@ -40,6 +40,7 @@ public class Practice06Duration extends LinearLayout {
         durationValueTv = (TextView) findViewById(R.id.durationValueTv);
         durationValueTv.setText(getContext().getString(R.string.ms_with_value, duration));
         durationSb.setMax(10);
+        durationSb.setProgress(1);
         durationSb.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
